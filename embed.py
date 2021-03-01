@@ -12,12 +12,6 @@ async def on_ready():
     print("봇이 성공적으로 실행되었습니다.")
     game = discord.Game('BC ClaN 문의 받는중')
     await client.change_presence(status=discord.Status.online, activity=game)
-    bot.user.setPresence({
-        game: {
-            name: 'BC ClaN 봇 일하는 중',
-            type: "STREAMING",
-            url: "https://www.twitch.tv/asdf"
-        }
 
 
 @client.event
