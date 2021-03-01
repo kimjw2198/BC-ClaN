@@ -10,7 +10,7 @@ client = discord.Client()
 @client.event
 async def on_ready():
     print("봇이 성공적으로 실행되었습니다.")
-    game = discord.Game('python 으로 봇 만드는중')
+    game = discord.Game('BC ClaN 문의 받는중')
     await client.change_presence(status=discord.Status.online, activity=game)
 
 
