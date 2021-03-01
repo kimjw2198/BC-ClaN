@@ -110,7 +110,7 @@ async def on_message(message):
         time.sleep(3)
         embed = discord.Embed(color=0x9932CC)
         embed.add_field(name="\u200b", value=f"```지원 플랫폼 [ KaKao / Steam ] : \n배그 닉네임 : \n디스코드이름#태그 : \n본인이 속해 있던 팀 또는 클랜 : \n인게임 닉변 여부 : \n짧은 각오 : ```", inline=False)
-        embed.set_author(name="BC ClaN 메시지 삭제")
+        embed.set_author(name="BC ClaN & TeaM 가입하기")
 
         await message.channel.send(embed=embed)
 
