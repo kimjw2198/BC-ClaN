@@ -125,6 +125,7 @@ async def on_message(message):
             guild = client.get_guild(693311983629369346)
             role = guild.get_role(815190273898184714)
             await message.author.add_roles(role)
+            await message.author.remove_roles(705540156274507787)
 
     if '지원 플랫폼 [ KaKao / Steam ] : Steam' in message.content:
         if message.channel.id == 815538292379353119:
