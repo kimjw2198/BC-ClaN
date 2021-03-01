@@ -148,5 +148,5 @@ async def on_message(message):
             embed.set_footer(text=f"{member.mention}님이 작성하셨습니다.")
             await client.get_channel(698524574509301771).send(embed=embed)
        
-access_token = os.enviorn["BOT_TOKEN"]
+access_token = os.environ['BOT_TOKEN']
 client.run(access_token)
