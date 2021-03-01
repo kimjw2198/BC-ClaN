@@ -2,6 +2,7 @@ import discord
 import datetime
 import time
 import asyncio
+import os
 from discord.ext import commands
 
 client = discord.Client()
@@ -146,5 +147,6 @@ async def on_message(message):
             embed.set_author(name="BC ClaN & TeaM 가입 신청 ")
             embed.set_footer(text=f"{member.mention}님이 작성하셨습니다.")
             await client.get_channel(698524574509301771).send(embed=embed)
-        
-client.run('Njg5MDQwMTg5NDY0NjQxNjM1.Xm9Erg.iUPHsklPXY591du7Nth3fzo8OGs')
+       
+access_token = os.enviorn['BOT_TOKEN']
+client.run('access_token')
