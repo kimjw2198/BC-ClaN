@@ -146,7 +146,7 @@ async def on_message(message):
             embed.add_field(name="\u200b", value=f"```{message}```{member.mention}", inline=False)
             embed.set_author(name="BC ClaN & TeaM 가입 신청 ")
             embed.set_footer(text=f"{member.mention}님이 작성하셨습니다.")
-            await client.get_channel(698524574509301771).send(embed=embed)
+            await client.get_channel(815949635625418762).send(embed=embed)
        
 access_token = os.environ['BOT_TOKEN']
 client.run(access_token)
