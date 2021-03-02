@@ -141,6 +141,19 @@ async def on_message(message):
             role = guild.get_role(815190058825941004)
             await message.author.add_roles(role)
             await message.author.remove_roles(705540156274507787)
+                
+    if '지원 플랫폼 [ KaKao / Steam ] : 둘다' in message.content:
+        if message.channel.id == 815538292379353119:
+            member = message.author
+            embed = discord.Embed(color=0x9932CC)
+            embed.add_field(name="\u200b", value=f"클랜 가입 단계가 얼마 남지 않았어요!\nDiscord : https://discord.gg/ZwGAM8F/nKaKaoTalk : https://open.kakao.com/o/gThPJV9b 비밀번호 : BCCLAN\n접속 부탁드립니다.", inline=False)
+            embed.set_author(name="BC ClaN & TeaM 가입 신청 ")
+            embed.set_footer(text="아래 링크 접속 부탁드립니다.")
+            await message.channel.send(embed=embed)
+            guild = client.get_guild(693311983629369346)
+            role = guild.get_role(815190058825941004)
+            await message.author.add_roles(role)
+            await message.author.remove_roles(705540156274507787)
 
     if '지원 플랫폼 [ KaKao / Steam ]' in message.content:
         if message.channel.id == 815538292379353119:
