@@ -111,7 +111,7 @@ async def on_message(message):
         embed = discord.Embed(color=0x9932CC)
         embed.add_field(name="\u200b", value=f"```지원 플랫폼 [ KaKao / Steam ] : \n배그 닉네임 : \n디스코드이름#태그 : \n본인이 속해 있던 팀 또는 클랜 : \n인게임 닉변 여부 : \n짧은 각오 : ```", inline=False)
         embed.set_author(name="BC ClaN & TeaM 가입하기")
-
+        time.sleep(10)
         await message.channel.send(embed=embed)
 
     if '지원 플랫폼 [ KaKao / Steam ] : KaKao' in message.content:
@@ -126,6 +126,8 @@ async def on_message(message):
             role = guild.get_role(815190273898184714)
             await message.author.add_roles(role)
             await message.author.remove_roles(705540156274507787)
+            yt
+            await message.delete()
 
     if '지원 플랫폼 [ KaKao / Steam ] : Steam' in message.content:
         if message.channel.id == 815538292379353119:
