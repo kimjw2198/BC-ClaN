@@ -124,9 +124,9 @@ async def on_message(message):
             await message.channel.send(embed=embed)
             guild = client.get_guild(693311983629369346)
             role = guild.get_role(815190273898184714)
+            role2 = guild.get_role(705540156274507787)
             await message.author.add_roles(role)
-            await message.author.remove_roles(705540156274507787)
-            yt
+            await message.author.remove_roles(role2)
             await message.delete()
 
     if '지원 플랫폼 [ KaKao / Steam ] : Steam' in message.content:
@@ -139,8 +139,9 @@ async def on_message(message):
             await message.channel.send(embed=embed)
             guild = client.get_guild(693311983629369346)
             role = guild.get_role(815190058825941004)
+            role2 = guild.get_role(705540156274507787)
             await message.author.add_roles(role)
-            await message.author.remove_roles(705540156274507787)
+            await message.author.remove_roles(role2)
                 
     if '지원 플랫폼 [ KaKao / Steam ] : 둘다' in message.content:
         if message.channel.id == 815538292379353119:
